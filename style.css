@@ -1,0 +1,368 @@
+/* font-family: 'Baloo Tamma 2', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Red Rose', cursive;; */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+#header{
+    padding: 10px 10px;
+    margin: 2px 0 0;
+}
+#header .row{margin-right:0;}
+
+#header h1{color: #28AAE0;}
+.headPara a{ color: #000;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+.flash, .tada{
+    animation:  2500ms infinite;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: #6a2c70;
+    padding: 1%;
+    color: #fff;
+
+}
+.navbar-brand{
+    font-size: 1.8rem !important;
+    font-family: 'Red Rose', cursive;
+    margin-left: 0.6%;
+}
+.navbar a, .navbar li{
+    color: #fff;
+    padding: 0 0.8rem;
+}
+
+
+.navbar-toggler-icon {
+    color: aqua;
+    background-color: #901192;
+}
+.dropdown-item{
+    font-size: 1.3rem;
+    color: #000 !important;
+}
+
+.dropdown:hover>.dropdown-menu{
+    display:block;
+}
+
+/* MAIN carousel */
+.carousel-caption h3{
+    font-size: 3.3rem;
+    font-family: 'Merriweather', serif;
+}
+.carousel-caption h1{
+    font-family: 'Merriweather', serif;
+}
+.carousel-caption a{
+    font-size: 17px;
+    margin-top: 1% 0;
+}
+.carousel-caption p{font-size: 1.2rem;}
+.carousel-caption{
+    margin-bottom: 30% !important;
+    line-height: 2rem;
+    padding: 2%;
+}
+.carousel-inner p{line-height:normal !important;}
+.carousel-indicators li{
+    bottom: -50px;
+    background-color: #16a3df;
+}
+
+.dark:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.2;
+}
+
+.ccd{
+    background: rgba(0,0,0,0.6);
+}
+.dots{
+    display: block;
+        text-align: center;
+        margin: 4% 0;
+        font-family: 'typicons';
+        font-size: 2.875rem;
+        font-weight: 400;
+        color: #6a2c70;
+    }
+
+.session{ margin: 4% 0;}
+.session h2{ font-weight: 600;}
+
+
+/* WHAT WE CAN DO */
+.card{margin-bottom: 1.5rem !important;    margin: 1%;
+    padding: 0;}
+
+.read{background-color:#6a2c70 ;}
+
+
+a.btn{color: #fff !important;}
+
+
+
+.circle{
+    height: 130px;
+    width: 130px;
+    border-radius: 4rem;
+    background-color: #6a2c70;
+    color: #fff;
+    margin: 0 auto;
+    vertical-align: middle;
+    padding: 47px 0;
+    text-align: center;
+    font-family: 'Lemonada', cursive;
+    font-size: 1.8rem;
+}
+
+
+/* TESTIMONIES */
+.quote{
+    bottom: 0;
+    margin-top: 1rem;
+    font-size: 4rem;}
+
+.card1,.card2,.card3,.card4,.card5,.card6,.abtImg,.abtImg1,.abtImg2,.abtMat1,.abtMat2 {
+    opacity: 0;
+}
+
+.card1.animated,.card2.animated,.card3.animated,.card4.animated,.card5.animated,.card6.animated,.abtImg.animated,.abtImg1.animated,.abtImg2.animated,.abtMat1.animated,.abtMat2.animated{    
+    opacity: 1;
+}
+
+
+
+/* CURSOR */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+  }
+
+  .cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 17px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+  }
+
+  @keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+  }
+
+  @keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+  }
+
+  @keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+  }
+
+
+/* MEDIA QUERY */
+
+@media(max-width:400px){
+*{text-align: center;}
+    .headPara{padding: 6px 0;}
+    #header a{ font-size: 0.7rem; margin-bottom: 5px !important;}
+    #header p{ margin-bottom: 0;font-size: 0.7rem;}
+    .brand h1  {font-size: 1rem;}
+    .navbar-brand{font-size: 1.4rem !important;}
+    .row{margin:0;}
+    .abtMat1,.abtMat2,#header,.navbar a{padding: 0;}
+    .ccd{background: rgba(0,0,0,0.2);}
+    .carousel-caption{width: 90%; margin: 0;left: 0;}
+    .carousel-caption{margin-bottom: 0 !important;}
+    .carousel-caption h1, h3,.navbar a{ font-size: 1rem!important;}
+    .carousel-caption p{font-size: 0.6rem !important;}
+    .carousel-caption a, .blogMtr a{ font-size: 9px; margin: 2px;}
+    .tasks li{text-align: left;}
+    .abt h1, .warranty-check h1, .warranty-check a, .tasks h1{font-size: 1.6rem;}
+    .abt p, .warranty-check h4{font-size: 1rem !important;line-height: 1.3rem !important;}
+    .soc a{padding: 10px !important;}
+}
+
+@media(max-width:780px) and (min-width:402px){
+    *{text-align: center;}
+    #header a{ font-size: 0.7rem; margin-bottom: 5px !important;}
+    #header p{ font-size: 0.9rem; margin-bottom: 0;}
+    #header{padding: 0 10px;text-align: center;}
+    .navbar a{padding: 0;font-size: 1.3rem;}
+    .navbar-brand{margin:0;}
+    .card-body{padding: 1.25rem 0.4rem;}
+    .brand h1 {font-size: 1.5rem;}
+    .card-body h4{font-size: 1.2rem;font-weight: 600;}
+    .ccd{background: rgba(0,0,0,0.2);}
+    .carousel-caption{margin-bottom: 5% !important;}
+    .carousel-caption p{font-size: 0.8rem !important;}
+    .carousel-caption{width: 90%; margin: 0;left: 0;}
+    .carousel-caption h1, h3, .brand{ font-size: 1.5rem!important;}
+    .carousel-caption a, .blogMtr a{ font-size: 13px;margin: 5px;}
+    .tasks li{text-align: left;}
+    .abt h1, .warranty-check h1, .warranty-check a, .tasks h1{font-size: 1.6rem;}
+    .abt p, .warranty-check h4{font-size: 1rem !important;line-height: 1.3rem !important;}
+    .soc a{padding: 12px !important;}
+
+}
+
+@media(max-width:1024px) and (min-width:768px){
+    #header a{ font-size: 0.7rem; margin: 5px !important;}
+    #header p{ font-size: 0.9rem; margin-bottom: 0;}
+    #header{padding: 0 10px;text-align: center;}
+    #header h1{font-size: 1.4rem !important;}
+    .headPara{padding: 6px 0;margin: 0 !important;}
+    .btn{ padding: .375rem .5rem;margin-top: 10px;}
+    .navbar{font-size: 1.5rem;}
+    .navbar-brand {font-style: 1.6rem !important;padding: 0;}
+  .abtImg{height: 100%;}
+  .carousel-caption h3{ font-size: 3rem;}
+  .brand h1  {font-size: 1.9rem;}
+  .tasks li{text-align: left;}
+  .soc a{padding: 14px !important;}
+
+}
+
+/* CONTACT US */
+.hangingBtn{top:45%}
+
+#map img{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+
+}
+.address{ padding: 3% 0;}
+.address h3{font-weight: 600}
+.add{margin: 5% 0;}
+.add a, .add p{color: #6a2c70; font-weight: 600;}
+/* BLOG PAGE */
+.read1{
+    background-color:#6a2c70 ;
+    position: absolute;
+    bottom:   0;
+    margin: auto;
+}
+
+.blogMtr{
+    padding: 7%;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+/* SERVICE PAGE */
+
+#serImg h4{
+    color: #fff;
+    background-color: #25A9E0;
+    padding: 4% 2%;
+    text-decoration: underline;
+}
+
+.warranty-check{
+    padding: 5%;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.warranty-check h1{font-family: 'Merriweather', serif;}
+.warranty-check a{padding: 1%; font-size: 1.5rem;}
+
+.abt, .tasks{
+    margin: 5% 0;
+}
+
+.tasks ul{
+    display: inline-block;
+    margin: 0 2rem;
+}
+.tasks li{
+    list-style: none;
+    margin: 20px 0;
+}
+
+
+.soc {
+    position: fixed;
+    top: 75%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+.soc li{    list-style: none;}
+  .soc a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  .soc a:hover {
+    background-color: #000;
+  }
+
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .instagram {
+    background: #bb0000;
+    color: white;
+  }
