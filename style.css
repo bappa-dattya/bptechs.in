@@ -345,7 +345,7 @@ a.btn{color: #fff !important;}
   .soc a {
     display: block;
     text-align: center;
-    padding: 16px;
+    padding: 14px;
     transition: all 0.3s ease;
     color: white;
     font-size: 20px;
@@ -364,5 +364,9 @@ a.btn{color: #fff !important;}
   }
   .instagram {
     background: #bb0000;
+    color: white;
+  }
+  .linkedin {
+    background: #0A66C2;
     color: white;
   }
