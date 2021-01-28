@@ -273,12 +273,25 @@ a.btn{color: #fff !important;}
 /* CONTACT US */
 .hangingBtn{top:45%}
 
-#map img{
+/* #map img{
     height: 50vh;
     width: 100%;
     object-fit: cover;
 
-}
+} */
+#map{
+    z-index: 3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    touch-action: pan-x pan-y;
+  }
+  
 .address{ padding: 3% 0;}
 .address h3{font-weight: 600}
 .add{margin: 5% 0;}
